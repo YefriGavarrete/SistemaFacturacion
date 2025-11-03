@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\clases\\consultassql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\clases\\consultassql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\clases\\alertasdelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,20 +78,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ConsultasSQL.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
               "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
               "RelativeToolTip": "Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA3wC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T03:14:02.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FormPedidos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
@@ -108,25 +108,26 @@
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\Login.cs",
               "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs",
               "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\Login.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAqwFAAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwFcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T03:04:27.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\Login.cs",
               "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs [Design]",
               "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T02:58:10.623Z"
+              "WhenOpened": "2025-10-30T02:58:10.623Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "FormRoles.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
@@ -137,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\Conexion.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Clases\\Conexion.cs",
@@ -145,12 +146,11 @@
               "RelativeToolTip": "Sistema_GestionFacturacion\\Clases\\Conexion.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAxwCEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T23:22:49.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T23:22:49.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FormUsuariosLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
@@ -161,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormPedidos.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
@@ -185,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Program.cs",
               "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Program.cs",
