@@ -19,7 +19,6 @@ namespace Sistema_GestionFacturacion.Clases
 
         private static string GetConnectionString()
         {
-            // Devuelve la ConnectionString o cadena vacía si no está configurada
             return ConfigurationManager.ConnectionStrings["ConexionDB"]?.ConnectionString ?? string.Empty;
         }
 
