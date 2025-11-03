@@ -1,119 +1,194 @@
-# Sistema_GestionFacturacion � Collaboration Guide
+# Sistema_GestionFacturacion — Guía de Colaboración
 
-Purpose
-- This repository is a Windows Forms billing system ( .NET Framework 4.7.2 ).  
-- Main features: orders (pedidos), order details, invoice generation, product management (categories, discounts), user/role management.
+Propósito
+- Este repositorio es un sistema de facturación de Windows Forms (.NET Framework 4.7.2).
 
-Goal of this document
-- Define how the team should collaborate and how database queries must be implemented.
-- Avoid common mistakes (embedding SQL/DB logic inside button handlers, duplicating connection logic, changing established `Conexion` behavior).
+- Funcionalidades principales: pedidos, detalles de pedidos, generación de facturas, gestión de productos (categorías, descuentos), gestión de usuarios/roles.
 
-Prerequisites (for contributors)
+Objetivo de este documento
+- Definir cómo debe colaborar el equipo y cómo deben implementarse las consultas a la base de datos.
+
+- Evitar errores comunes (insertar lógica SQL/DB dentro de los controladores de botones, duplicar la lógica de conexión, modificar el comportamiento establecido de `Conexion`).
+
+Requisitos previos (para colaboradores)
+
 - Visual Studio 2022
-- .NET Framework 4.7.2 workload
-- Microsoft SQL Server (Express/LocalDB or full instance)
-- A valid connection string in `App.config` under the name `ConexionDB`
-  - Example: `Server=.;Database=SistemaGestionFacturacion;Trusted_Connection=True;`
-- Ensure the database schema exists (roles, users, products, categories, discounts, pedidos, detalles, factura). Run the provided SQL scripts if present.
 
-Do NOT change
-- `Sistema_GestionFacturacion\Clases\Conexion.cs` � this class and its lifetime semantics are part of the established project infrastructure. All DB access should respect it or rely on `ConsultasSQL` wrappers.
+- .NET Framework 4.7.2
 
-Primary rule for DB access
-- Use only the `ConsultasSQL` class for database operations from forms and business logic.
-  - Available helpers: `Buscar`, `Guardar`, `update`, `Eliminar`, `EjecutarConsulta`, `EjecutarComando`.
-- Do not embed raw SQL strings and `SqlConnection`/`SqlCommand` code directly inside button click handlers or UI event handlers.
-- For parametrized commands (especially for binary columns like `Clave`/`Sal`) create a `SqlCommand`, add parameters and call `consulta.EjecutarComando(cmd)`.
+- Microsoft SQL Server (Express/LocalDB o instancia completa)
 
-Why
-- Centralizing DB access simplifies connection handling, logging and error handling.
-- Avoids duplicate code and concurrency errors (open readers / connection state).
-- Makes code review and testing easier.
+- Una cadena de conexión válida en `App.config` bajo el nombre `ConexionDB`
 
-Recommended patterns
+- Ejemplo: `Server=.;Database=SistemaGestionFacturacion;Trusted_Connection=True;`
 
-- UI layer (forms) � minimal logic:
-  - Validate UI input.
-  - Call an application-specific method that uses `ConsultasSQL`.
-  - Do not place SQL logic in `btnClick` directly.
+- Asegúrese de que exista el esquema de la base de datos (roles, usuarios, productos, categorías, descuentos, pedidos, detalles, factura). Ejecute los scripts SQL proporcionados, si los hay.
 
-Example pattern (pseudocode)
-- In the form:
-  - Create a method that calls `ConsultasSQL`:
-    - `void SaveUser() { /* validate */ consulta.Guardar(table, cols, vals); }`
-  - `btnSave_Click` should only call `SaveUser()`.
+NO modifique
+- `Sistema_GestionFacturacion\Clases\Conexion.cs` — esta clase y su semántica de ciclo de vida forman parte de la infraestructura establecida del proyecto. Todo acceso a la base de datos debe respetarla o utilizar los wrappers de `ConsultasSQL`.
 
-Database binary columns (password hash)
-- If `Usuarios.Clave`/`Usuarios.Sal` are `VARBINARY`, use `SqlDbType.VarBinary` and `EjecutarComando` (not `Guardar` with inline strings).
-- If you must store Base64 string in `NVARCHAR`, use `Buscar`/`Guardar` accordingly � but storing bytes as VARBINARY + parametrized commands is recommended.
+Regla principal para el acceso a la base de datos
 
-DataGridView notes
-- Do not bind password or salt columns to `DataGridView`.
-- Remove `Clave`, `Sal`, `Iteraciones` from the DataTable before `DataSource = dt`, or exclude those columns in the SELECT.
-- Attach a `dgv.DataError` handler to avoid the default DataGridView error dialog.
+- Utilice únicamente la clase `ConsultasSQL` para las operaciones de base de datos desde formularios y lógica de negocio.
 
-Coding conventions (short)
-- Always use `using` for `IDisposable` resources (the `ConsultasSQL` methods already do this).
-- Escape string values only when building safe SQL for `Guardar`/`update`. Prefer parametrized commands for all user input.
-- Keep methods small and single-responsibility � UI should be thin; database calls live in `ConsultasSQL` or small repository wrappers.
+- Funciones auxiliares disponibles: `Buscar`, `Guardar`, `update`, `Eliminar`, `EjecutarConsulta`, `EjecutarComando`.
 
-Development workflow (Git / GitHub)
-- Branching:
-  - Create a branch per task: `feature/<short-description>` or `bugfix/<id>-short`.
-  - Keep branches small and focused.
-- Commits:
-  - Use meaningful messages: `feat(users): add create-user form` or `fix(products): validation on price`.
-  - Group related changes into a single PR when practical.
-- Pull Requests:
-  - Open a PR against `main` (or the designated integration branch).
-  - Include a short description, steps to test, and any DB script changes required.
-  - At least one reviewer must approve before merging.
-- Code review checklist:
-  - No direct SQL in event handlers
-  - Uses `ConsultasSQL` for DB access
-  - Connection string not changed in `Conexion.cs`
-  - Passwords handled securely (PBKDF2 + salt) and stored as VARBINARY when possible
-  - DataGridViews do not bind binary columns
-  - Unit / manual test steps included
+- No inserte cadenas SQL sin procesar ni código de `SqlConnection`/`SqlCommand` directamente en los controladores de clic de botones o de eventos de la interfaz de usuario.
 
-How to run locally
-1. Clone the repository.
-2. Open solution in Visual Studio 2022.
-3. Update `App.config` > `connectionStrings` > `ConexionDB` with your SQL Server instance and DB.
-4. Run any database creation scripts (check `Scripts/` or ask the maintainer if missing).
-5. Build and run the app.
-6. Use a test admin user or create users through the provided forms.
+- Para comandos parametrizados (especialmente para columnas binarias como `Clave`/`Sal`), cree un `SqlCommand`, añada parámetros y llame a `consulta.EjecutarComando(cmd)`.
 
-How to send changes for review
-- Create a feature branch.
-- Make changes, run and test locally.
-- Commit with clear messages and push the branch to the remote.
-- Open a Pull Request on GitHub describing:
-  - What changed and why
-  - How to test (DB scripts, sample data)
-  - Any migration steps
-- Tag reviewers and wait for CI / manual review.
+¿Por qué?
 
-Files & Forms overview (current)
-- Forms:
-  - `Login` � authentication; opens `FormRoles` (admin) or `FormPedidos` (employee).
-  - `FormPedidos` � create orders; requires employee `Nombre` & `Apellido` only.
-  - `FormUsuariosLogin` � user creation and management.
-  - `FormRoles` � role management.
-  - `FormUsuarios` � (product/users management variations).
-  - `Logica_CRUD` � helper orchestration form (main menu).
-- Classes:
-  - `Clases\ConsultasSQL.cs` � central DB helper (use this).
-  - `Clases\Conexion.cs` � shared connection utility (do not modify).
-  - `Clases\AlertasDelSistema.cs` � UI alerts.
+- Centralizar el acceso a la base de datos simplifica la gestión de conexiones, el registro y el manejo de errores.
 
-Final reminders
-- Centralize DB access through `ConsultasSQL`.
-- Keep UI handlers small and call methods that use `ConsultasSQL`.
-- Never modify `Conexion.cs`.
-- Use `EjecutarComando` for parametrized `SqlCommand` (VARBINARY columns).
-- Follow Git workflow: branch ? commit ? PR ? review ? merge.
+- Evita código duplicado y errores de concurrencia (lectores abiertos/estado de conexión).
 
-If you want, I can:
-- Add a sample SQL script `Scripts/CreateSchema.sql` (roles, users with VARBINARY columns).
-- Add a lightweight `CONTRIBUTING.md` with a PR template.
+- Facilita la revisión y las pruebas de código.
+
+
+Patrones recomendados
+
+- Capa de interfaz de usuario (formularios): lógica mínima:
+
+- Validar la entrada de la interfaz de usuario.
+
+- Llamar a un método específico de la aplicación que utilice `ConsultasSQL`.
+
+- No coloque lógica SQL directamente en `btnClick`.
+
+Ejemplo de patrón (pseudocódigo)
+
+- En la forma:
+
+- Cree un método que llame a `ConsultasSQL`:
+
+- `void SaveUser() { /* validar */ consulta.Guardar(tabla, cols, vals); }`
+
+- `btnSave_Click` solo debe llamar a `SaveUser()`.
+
+Columnas binarias de la base de datos (hash de contraseña)
+
+- Si `Usuarios.Clave`/`Usuarios.Sal` son `VARBINARY`, use `SqlDbType.VarBinary` y `EjecutarComando` (no `Guardar` con cadenas en línea).
+
+- Si necesita almacenar una cadena Base64 en `NVARCHAR`, use `Buscar`/`Guardar` según corresponda; sin embargo, se recomienda almacenar bytes como VARBINARY con comandos parametrizados.
+
+Notas sobre DataGridView
+
+- No vincule las columnas de contraseña o sal a `DataGridView`.
+
+- Elimine `Clave`, `Sal` e `Iteraciones` de la DataTable antes de `DataSource = dt`, o exclúyalas en la consulta SELECT.
+
+- Agregue un controlador `dgv.DataError` para evitar el cuadro de diálogo de error predeterminado de DataGridView.
+
+Convenciones de codificación (breve)
+
+- Utilice siempre `using` para los recursos `IDisposable` (los métodos de `ConsultasSQL` ya lo hacen).
+
+- Escapar los valores de cadena solo al crear SQL seguro para `Guardar`/`update`. Prefiera los comandos parametrizados para todas las entradas del usuario.
+
+- Mantenga los métodos pequeños y con una sola responsabilidad: la interfaz de usuario debe ser sencilla; las llamadas a la base de datos se realizan en `ConsultasSQL` o en pequeños contenedores de repositorio.
+
+Flujo de trabajo de desarrollo (Git / GitHub)
+
+- Ramificación:
+
+- Cree una rama por tarea: `feature/<descripción-breve>` o `bugfix/<id>-breve`.
+
+- Mantén las ramas pequeñas y enfocadas.
+
+- Confirmaciones:
+
+- Usa mensajes descriptivos: `feat(users): agregar formulario de creación de usuario` o `fix(products): validación de precio`.
+
+- Agrupa los cambios relacionados en una sola solicitud de extracción (PR) cuando sea posible.
+
+- Solicitudes de extracción (PR):
+
+- Abre una PR contra `main` (o la rama de integración designada).
+
+- Incluye una breve descripción, los pasos para probar y cualquier cambio necesario en el script de la base de datos.
+
+- Al menos un revisor debe aprobar antes de fusionar.
+
+- Lista de verificación para la revisión de código:
+
+- No uses SQL directamente en los controladores de eventos.
+
+- Usa `ConsultasSQL` para acceder a la base de datos.
+
+- La cadena de conexión no se modifica en `Connection.cs`.
+
+- Las contraseñas se manejan de forma segura (PBKDF2 + salt) y se almacenan como VARBINARY cuando sea posible.
+
+- Los DataGridView no enlazan columnas binarias.
+
+- Incluye pasos para pruebas unitarias/manuales.
+
+Cómo ejecutar localmente
+
+1. Clonar el repositorio.
+
+2. Abrir la solución en Visual Studio 2022.
+3. Actualizar `App.config` > `connectionStrings` > `ConnectionDB` con la instancia de SQL Server y la base de datos.
+
+4. Ejecutar los scripts de creación de la base de datos (consultar `Scripts/` o preguntar al responsable del mantenimiento si faltan).
+
+5. Compilar y ejecutar la aplicación.
+
+6. Usar un usuario administrador de prueba o crear usuarios mediante los formularios proporcionados.
+
+Cómo enviar cambios para su revisión:
+
+- Crear una rama de desarrollo.
+
+- Realizar los cambios, ejecutar y probar localmente.
+
+- Confirmar los cambios con mensajes claros y subir la rama al repositorio remoto.
+
+- Abrir una solicitud de extracción en GitHub describiendo:
+
+- Qué cambió y por qué
+
+- Cómo probar (scripts de base de datos, datos de muestra)
+
+- Pasos de migración
+- Etiquetar a los revisores y esperar la revisión manual o de integración continua.
+
+Descripción general de archivos y formularios (actual)
+
+- Formularios:
+
+- `Login` — autenticación; Abre `FormRoles` (administrador) o `FormPedidos` (empleado).
+
+- `FormPedidos`: crea pedidos; solo requiere el `Nombre` y el `Apellido` del empleado.
+
+- `FormUsuariosLogin`: creación y gestión de usuarios.
+
+- `FormRoles`: gestión de roles.
+
+- `FormUsuarios`: (variantes de gestión de productos/usuarios).
+
+- `Logica_CRUD`: formulario auxiliar de orquestación (menú principal).
+
+- Clases:
+
+- `Clases\ConsultasSQL.cs`: auxiliar central de la base de datos (usar este).
+
+- `Clases\Conexion.cs`: utilidad de conexión compartida (no modificar).
+
+- `Clases\AlertasDelSistema.cs`: alertas de la interfaz de usuario.
+
+Recordatorios finales:
+
+- Centralizar el acceso a la base de datos mediante `ConsultasSQL`.
+
+- Mantener los controladores de la interfaz de usuario pequeños y llamar a métodos que utilicen `ConsultasSQL`. - Nunca modifiques `Conexion.cs`.
+
+- Usa `EjecutarComando` para los comandos `SqlCommand` parametrizados (columnas VARBINARY).
+
+- Sigue el flujo de trabajo de Git: rama → commit → PR → revisión → fusión.
+
+- Agregar un script SQL de ejemplo `Scripts/CreateSchema.sql` (roles, usuarios con columnas VARBINARY).
+- Agregar un archivo `CONTRIBUTING.md` ligero con una plantilla para PR. Cómo ejecutar localmente
+
+
