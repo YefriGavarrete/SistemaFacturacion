@@ -1,24 +1,23 @@
 
-
 Use SistemaGestionFacturacion
 IF OBJECT_ID('dbo.Usuarios','U') IS NULL
 BEGIN
-    CREATE TABLE dbo.Usuarios (
-        IdUsuario INT IDENTITY(1,1) PRIMARY KEY,
-        Nombre NVARCHAR(100) NOT NULL,
-        Apellido NVARCHAR(100) NOT NULL,
-        Usuario NVARCHAR(50) NOT NULL UNIQUE,
-        Clave VARBINARY(512) NOT NULL,   -- almacenar hash (PBKDF2 / Rfc2898)
-        Sal VARBINARY(128) NOT NULL,     -- salt usado para el hash
-        Iteraciones INT NOT NULL DEFAULT (10000),
-        IdRol INT NOT NULL,
-        Estado VARCHAR(15) NOT NULL DEFAULT ('Activo'),
+ï¿½   CREATE TABLE dbo.Usuarios (
+ï¿½       IdUsuario INT IDENTITY(1,1) PRIMARY KEY,
+ï¿½       Nombre NVARCHAR(100) NOT NULL,
+ï¿½       Apellido NVARCHAR(100) NOT NULL,
+ï¿½       Usuario NVARCHAR(50) NOT NULL UNIQUE,
+ï¿½       Clave VARBINARY(512) NOT NULL,   -- almacenar hash (PBKDF2 / Rfc2898)
+ï¿½       Sal VARBINARY(128) NOT NULL,     -- salt usado para el hash
+ï¿½       Iteraciones INT NOT NULL DEFAULT (10000),
+ï¿½       IdRol INT NOT NULL,
+ï¿½       Estado VARCHAR(15) NOT NULL DEFAULT ('Activo'),
 
-        CONSTRAINT FK_Usuarios_Pedidos FOREIGN KEY (IdRol)
-            REFERENCES dbo.Roles (IdRol)
-            ON DELETE NO ACTION
-            ON UPDATE NO ACTION
-    );
+ï¿½       CONSTRAINT FK_Usuarios_Pedidos FOREIGN KEY (IdRol)
+ï¿½           REFERENCES dbo.Roles (IdRol)
+ï¿½           ON DELETE NO ACTION
+ï¿½           ON UPDATE NO ACTION
+ï¿½   );
 END;
 GO
 

@@ -3,10 +3,11 @@ GO
 USE SistemaGestionFacturacion
 IF OBJECT_ID('dbo.Roles','U') IS NULL
 BEGIN
-    CREATE TABLE dbo.Roles (
-        IdRol INT IDENTITY(1,1) PRIMARY KEY,
-        Rol NVARCHAR(50) NOT NULL UNIQUE,
-        Estado VARCHAR(15) NOT NULL DEFAULT ('Activo')
-    );
+ï¿½   CREATE TABLE dbo.Roles (
+ï¿½       IdRol INT IDENTITY(1,1) PRIMARY KEY,
+ï¿½       Rol NVARCHAR(50) NOT NULL UNIQUE,
+ï¿½       Estado VARCHAR(15) NOT NULL DEFAULT ('Activo')
+ï¿½   );
 END;
 GO
+
