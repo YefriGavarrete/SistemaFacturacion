@@ -11,48 +11,48 @@ using System.Windows.Forms;
 
 namespace Sistema_GestionFacturacion.Formularios
 {
-    public partial class FormRoles : Form
+    public partial class FormCategorias : Form
     {
+
         ConsultasSQL consulta = new ConsultasSQL();
         Conexion conexion = new Conexion();
         AlertasDelSistema Alertas = new AlertasDelSistema();
-        public FormRoles()
+        public FormCategorias()
         {
             InitializeComponent();
             MostrarRegistros("Activo");
             rbDatosActivos.Checked = true;
         }
+
         void LimpiarCampos()
         {
-            txtIdRol.Clear();
-            txtRoles.Clear();
+            txtIdCategorias.Clear();
+            txtCategorias.Clear();
         }
 
         void HabilitarNuevosRegistros(bool valor)
         {
-            
             btnGuardarRegistro.Enabled = valor;
             btnCancelarRegistro.Enabled = valor;
-            txtRoles.Enabled = valor;    
+            txtCategorias.Enabled = valor;
             btnNuevoRegistro.Enabled = !valor;
         }
 
-        void GuardarRol()
+        void GuardarCategoria()
         {
-            string Rol = txtRoles.Text.Trim();
+            string categoria = txtCategorias.Text.Trim();
 
-            if (string.IsNullOrEmpty(Rol))
+            if (string.IsNullOrEmpty(categoria))
             {
-                Alertas.Advertencia("Por favor, complete el campo de Rol antes de guardar.");
+                Alertas.Advertencia("Por favor, complete todos los campos antes de registrar.");
                 return;
             }
-
             string estado = "Activo";
-            string columnas = "Rol, Estado";
-            string valores = $"'{Rol}', '{(estado)}'";
-            if (consulta.Guardar("Roles", columnas, valores))
+            string columnas = "Categoria, Estado";
+            string valores = $"'{categoria}', '{(estado)}'";
+            if (consulta.Guardar("Categorias", columnas, valores))
             {
-                Alertas.Realizado($"El Rol {Rol} se registro con éxito");
+                Alertas.Realizado($"La categoria {categoria} se registro con éxito");
                 MostrarRegistros("Activo");
                 rbDatosActivos.Checked = true;
                 HabilitarNuevosRegistros(false);
@@ -60,20 +60,19 @@ namespace Sistema_GestionFacturacion.Formularios
             }
             else
             {
-                Alertas.Advertencia("No se pudo guardar el Rol. Intente nuevamente.");
+                Alertas.Advertencia("No se pudo guardar la Categoria. Intente nuevamente.");
             }
         }
         private void MostrarRegistros(string estado)
         {
             try
             {
-                string columnas = "IdRol, Rol, Estado";
+                string columnas = "IdCategoria,Categoria, Estado";
                 string condicion = $"Estado = '{estado}'";
-                DataTable dt = consulta.Buscar("Roles", columnas, condicion);
+                DataTable dt = consulta.Buscar("Categorias", columnas, condicion);
                 dgvDatos.DataSource = dt;
                 dgvDatos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dgvDatos.Refresh();
-
                 colorColumnaEstado();
             }
             catch (Exception ex)
@@ -81,48 +80,6 @@ namespace Sistema_GestionFacturacion.Formularios
                 Alertas.Advertencia($"Error al mostrar registros: {ex.Message}");
             }
         }
-
-
-        void ActualizarRol()
-        {
-            string msg = "¿Desea actualizar este Rol?";
-            if (Alertas.Confirmacion(msg))
-            {
-                try
-                {
-                    string Roles = txtRoles.Text.Trim();
-                    string estado = lblEstado.Text.Trim();
-                    string actualizar = $"Rol = '{Roles}', " +
-                         $"Estado = '{estado}'";
-
-                    string condicion = $"Rol='{Roles}'";
-
-                    if (consulta.update("Roles", actualizar, condicion) > 0)
-                    {
-                        Alertas.Realizado("Los datos se actualizaron con exito");
-                        MostrarRegistros("Activo");
-                        HabilitarNuevosRegistros(false);
-                        LimpiarCampos();
-                        btnDesactivarRegistro.Enabled = false;
-                        btnReactivarRegistro.Enabled = false;
-                        rbDatosActivos.Checked = true;
-                        lblEstado.Visible = false;
-                    }
-                    else
-                    {
-                        Alertas.Advertencia("Error al actualizar el Rol");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Alertas.Advertencia($"Error al actualizar el Rol:{ex.Message}");
-
-                }
-            }
-
-        }
-
-
         void EnviarDatosParaEditar(DataGridViewCellEventArgs e)
         {
             try
@@ -133,8 +90,8 @@ namespace Sistema_GestionFacturacion.Formularios
                 if (e.RowIndex >= 0)
                 {
                     DataGridViewRow fila = dgvDatos.Rows[e.RowIndex];
-                    txtIdRol.Text = fila.Cells["IdRol"].Value.ToString();
-                    txtRoles.Text = fila.Cells["Rol"].Value.ToString();
+                    txtIdCategorias.Text = fila.Cells["IdCategoria"].Value.ToString();
+                    txtCategorias.Text = fila.Cells["Categoria"].Value.ToString();
                     lblEstado.Text = fila.Cells["Estado"].Value.ToString();
                 }
                 if (lblEstado.Text == "Activo")
@@ -153,16 +110,60 @@ namespace Sistema_GestionFacturacion.Formularios
                 }
 
                 lblOperacion.Visible = false;
+                
             }
             catch (Exception ex)
             {
                 Alertas.Advertencia($"Error al cargar datos: {ex.Message}");
                 lblOperacion.Visible = false;
             }
-
         }
 
+        void ActualizarCategoria()
+        {
 
+            string msg = "¿Desea actualizar esta Categoria?";
+            if (Alertas.Confirmacion(msg))
+            {
+                try
+                {
+
+                    int idCategorias = int.Parse(txtIdCategorias.Text);
+                    string categorias = txtCategorias.Text.Trim();
+                    string estado = lblEstado.Text.Trim();
+
+                    string actualizar = $" Categoria = '{categorias}', " +
+                        $" Estado = '{estado}'";
+
+                    string condicion = $"IdCategoria= '{idCategorias}'";
+
+                    if (consulta.update("Categorias", actualizar, condicion) > 0)
+                    {
+                        Alertas.Realizado("Los datos se actualizaron con exito");
+                        MostrarRegistros("Activo");
+                        HabilitarNuevosRegistros(false);
+                        LimpiarCampos();
+                        btnDesactivarRegistro.Enabled = false;
+                        btnReactivarRegistro.Enabled = false;
+                        rbDatosActivos.Checked = true;
+                        lblEstado.Visible = false;
+                    }
+                    else
+                    {
+                        Alertas.Advertencia("Error al actualizar la Categoria, Intente de nuevo");
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    Alertas.Advertencia($"Error al actualizar, Pruebe de otra manera :{ex.Message}");
+
+                }
+
+            }
+           
+
+        }
         void colorColumnaEstado()
         {
             foreach (DataGridViewRow fila in dgvDatos.Rows)
@@ -184,8 +185,6 @@ namespace Sistema_GestionFacturacion.Formularios
                 }
             }
         }
-
-
         void ActivarDesactivarRegistro(string estadoActual, string nuevoEstado)
         {
             string estado = lblEstado.Text;
@@ -199,26 +198,24 @@ namespace Sistema_GestionFacturacion.Formularios
                 Alertas.Advertencia("Usted ya " + nuevoEstado + " este registro. GUARDE los cambios..!!");
             }
         }
-
         private void btnNuevoRegistro_Click(object sender, EventArgs e)
         {
             lblOperacion.Text = "Registrando";
             HabilitarNuevosRegistros(true);
-
         }
 
         private void btnGuardarRegistro_Click(object sender, EventArgs e)
         {
             if (lblOperacion.Text == "Registrando")
             {
-                GuardarRol();
+                GuardarCategoria();
             }
             else if (lblOperacion.Text == "Editando")
             {
-                ActualizarRol();
-
+                ActualizarCategoria();
             }
         }
+
         private void btnCancelarRegistro_Click(object sender, EventArgs e)
         {
             HabilitarNuevosRegistros(false);
@@ -227,8 +224,6 @@ namespace Sistema_GestionFacturacion.Formularios
             lblEstado.Visible = false;
             LimpiarCampos();
         }
-
-
 
         private void btnTestConexion_Click(object sender, EventArgs e)
         {
@@ -242,27 +237,43 @@ namespace Sistema_GestionFacturacion.Formularios
             rbDatosActivos.Checked = true;
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void rbDatosActivos_CheckedChanged(object sender, EventArgs e)
         {
-            this.Close();
+
+            if (rbDatosActivos.Checked)
+            {
+                MostrarRegistros("Activo");
+            }
+        }
+        private void rbDatosInactivos_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbDatosInactivos.Checked)
+            {
+                MostrarRegistros("Inactivo");
+            }
+        }
+
+        private void btnReactivarRegistro_Click_1(object sender, EventArgs e)
+        {
+            ActivarDesactivarRegistro("Inactivo", "Activo");
+        }
+
+        private void btnDesactivarRegistro_Click_1(object sender, EventArgs e)
+        {
+            ActivarDesactivarRegistro("Activo", "Inactivo");
         }
 
         private void txtFiltrar_TextChanged(object sender, EventArgs e)
         {
-            string texto = txtFiltrar.Text;
+            string texto = txtFiltrar.Text.Trim();
+
             DataTable dt = dgvDatos.DataSource as DataTable;
             if (dt != null)
             {
                 dt.DefaultView.RowFilter =
-                    $"Convert(Rol, 'System.String') LIKE '%{texto}%'";
+                    $"Convert(Categoria, 'System.String') LIKE '%{texto}%'";
             }
             colorColumnaEstado();
-        }
-
-        private void btnReactivarRegistro_Click(object sender, EventArgs e)
-        {
-            ActivarDesactivarRegistro("Inactivo", "Activo");
-           
         }
 
         private void dgvDatos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -270,25 +281,14 @@ namespace Sistema_GestionFacturacion.Formularios
             EnviarDatosParaEditar(e);
         }
 
-        private void btnDesactivarRegistro_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            ActivarDesactivarRegistro("Activo", "Inactivo");
+            this.Close();
         }
 
-        private void rbDatosActivos_CheckedChanged(object sender, EventArgs e)
+        private void FormCategorias_Load(object sender, EventArgs e)
         {
-            if (rbDatosActivos.Checked)
-            {
-               MostrarRegistros("Activo");
-            }
-        }
-
-        private void rbDatosInactivos_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbDatosInactivos.Checked)
-            {
-                MostrarRegistros("Inactivo");
-            }
+    
         }
     }
 }

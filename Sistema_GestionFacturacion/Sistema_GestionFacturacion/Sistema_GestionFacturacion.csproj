@@ -50,7 +50,36 @@
     <Compile Include="Clases\AlertasDelSistema.cs" />
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\ConsultasSQL.cs" />
-    <Compile Include="Clases\Roles.cs" />
+    <Compile Include="Formularios\FormCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCargos.Designer.cs">
+      <DependentUpon>FormCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCategorias.Designer.cs">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormDescuentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormDescuentos.Designer.cs">
+      <DependentUpon>FormDescuentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormEmpleado.Designer.cs">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +112,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FormCargos.resx">
+      <DependentUpon>FormCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCategorias.resx">
+      <DependentUpon>FormCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormDescuentos.resx">
+      <DependentUpon>FormDescuentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormEmpleado.resx">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormPedidos.resx">
       <DependentUpon>FormPedidos.cs</DependentUpon>
     </EmbeddedResource>
