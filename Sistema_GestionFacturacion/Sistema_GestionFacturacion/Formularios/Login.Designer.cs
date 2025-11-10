@@ -84,6 +84,7 @@
             this.txtClave.Location = new System.Drawing.Point(139, 100);
             this.txtClave.Margin = new System.Windows.Forms.Padding(4);
             this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(168, 23);
             this.txtClave.TabIndex = 24;
             // 
@@ -116,9 +117,9 @@
             this.lblClave.Location = new System.Drawing.Point(53, 100);
             this.lblClave.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(75, 20);
+            this.lblClave.Size = new System.Drawing.Size(52, 20);
             this.lblClave.TabIndex = 5;
-            this.lblClave.Text = "Nombre";
+            this.lblClave.Text = "Clave";
             // 
             // Login
             // 

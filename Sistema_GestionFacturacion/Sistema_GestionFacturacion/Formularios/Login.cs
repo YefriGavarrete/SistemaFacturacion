@@ -59,8 +59,6 @@ namespace Sistema_GestionFacturacion.Formularios
                 {
                     cmd.Parameters.Add("@Usuario", SqlDbType.NVarChar, 50).Value = usuario;
                     conexion.abrirConexion();
-
-
                     using (var reader = cmd.ExecuteReader())
                     {
                         if (!reader.HasRows)
@@ -76,13 +74,12 @@ namespace Sistema_GestionFacturacion.Formularios
                             Alertas.Advertencia("Usuario no está activo.");
                             return;
                         }
-
                         int iteraciones = 10000;
                         if (reader["Iteraciones"] != DBNull.Value)
                             int.TryParse(reader["Iteraciones"].ToString(), out iteraciones);
 
-                        byte[] storedHash = ReadDbBinary(reader, "Clave");
-                        byte[] salt = ReadDbBinary(reader, "Sal");
+                        byte[] storedHash = LeerDbBinary(reader, "Clave");
+                        byte[] salt = LeerDbBinary(reader, "Sal");
 
                         if (storedHash == null || salt == null)
                         {
@@ -103,25 +100,44 @@ namespace Sistema_GestionFacturacion.Formularios
 
                         Alertas.Realizado("Inicio de sesión exitoso.");
 
-                        // Open form according to role
+                        // Abrir formulario según rol
                         if (!string.IsNullOrEmpty(rolNombre) && rolNombre.Equals("Administrador", StringComparison.OrdinalIgnoreCase))
                         {
                             try
                             {
-                                var main = new FormRoles();
+                                var menu = new FormMenu(rolNombre, nombre, apellido);
+                                menu.StartPosition = FormStartPosition.CenterScreen;
+                                menu.Show();
+
                                 this.Hide();
-                                main.Show();
                             }
                             catch (Exception ex)
                             { 
-                                Alertas.Advertencia($"No se pudo abrir la aplicación: {ex.Message}");
+                                Alertas.Advertencia($"No se pudo abrir el menu principal: {ex.Message}");
                             }
+                        }
+
+                        else if(!string.IsNullOrEmpty(rolNombre) && rolNombre.Equals("Empleado", StringComparison.OrdinalIgnoreCase))
+                        {
+                            try
+                            {
+                                var menu = new FormMenu(rolNombre, nombre, apellido);
+                                menu.StartPosition = FormStartPosition.CenterScreen;
+                                menu.Show();
+
+                                this.Hide();
+                            }
+                            catch (Exception ex)
+                            {
+                                Alertas.Advertencia($"No se pudo abrir el menu principal: {ex.Message}");
+                            }
+
                         }
                         else
                         {
                             try
                             {
-                                // open FormularioPedidos and pass only name and surname
+                                // Abrir FormularioPedidos 
                                 var pedidos = new FormPedidos(nombre, apellido);
                                 this.Hide();
                                 pedidos.Show();
@@ -149,10 +165,9 @@ namespace Sistema_GestionFacturacion.Formularios
         }
 
         // Verifica la contraseña usando PBKDF2 (Rfc2898). Comparación en tiempo constante.
-        private bool VerificarPassword(string password, byte[] salt, byte[] storedHash, int iteraciones)
+        bool VerificarPassword(string password, byte[] salt, byte[] storedHash, int iteraciones)
         {
             if (password == null || salt == null || storedHash == null) return false;
-
             try
             {
                 using (var pbk = new Rfc2898DeriveBytes(password, salt, iteraciones))
@@ -174,11 +189,11 @@ namespace Sistema_GestionFacturacion.Formularios
         }
 
         // Lee una columna que puede contener VARBINARY (byte[]) o una cadena Base64 (NVARCHAR) y devuelve byte[]
-        private byte[] ReadDbBinary(SqlDataReader reader, string columnName)
+        byte[] LeerDbBinary(SqlDataReader reader, string nombreColumna)
         {
             try
             {
-                object val = reader[columnName];
+                object val = reader[nombreColumna];
                 if (val == DBNull.Value || val == null) return null;
 
                 if (val is byte[] bytes) return bytes;

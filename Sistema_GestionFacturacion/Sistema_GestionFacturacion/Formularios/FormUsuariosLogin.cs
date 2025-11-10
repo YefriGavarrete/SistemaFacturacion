@@ -19,7 +19,7 @@ namespace Sistema_GestionFacturacion.Formularios
         AlertasDelSistema Alertas = new AlertasDelSistema();
         Conexion conexion = new Conexion();
 
-        // PBKDF2 parameters
+        // PBKDF2 parametros
         const int PBKDF2_ITERATIONS = 10000;
         const int PBKDF2_HASH_BYTES = 32; // 256-bit
         const int SALT_BYTES = 16;
@@ -29,7 +29,6 @@ namespace Sistema_GestionFacturacion.Formularios
             InitializeComponent();
             CargarRoles();
         }
-
         void CargarRoles()
         {
             try
@@ -40,6 +39,8 @@ namespace Sistema_GestionFacturacion.Formularios
                     cmbRol.DataSource = dtRoles;
                     cmbRol.DisplayMember = "Rol";
                     cmbRol.ValueMember = "IdRol";
+                    cmbRol.Enabled = false;
+                    cmbRol.SelectedIndex = -1;
                 }
                 else
                 {
@@ -73,11 +74,12 @@ namespace Sistema_GestionFacturacion.Formularios
             txtUsuario.Enabled = valor;
             txtClave.Enabled = valor;
             cmbRol.Enabled = valor;
+            btnNuevoRegistro.Enabled = !valor;
         }
 
 
         // Genera salt 
-        private static byte[] GenerateSalt(int size = SALT_BYTES)
+        static byte[] GenerarSalt(int size = SALT_BYTES)
         {
             var salt = new byte[size];
             using (var rng = new RNGCryptoServiceProvider())
@@ -86,9 +88,8 @@ namespace Sistema_GestionFacturacion.Formularios
             }
             return salt;
         }
-
         // Calcula el hash PBKDF2
-        private static byte[] ComputeHash(string password, byte[] salt, int iterations = PBKDF2_ITERATIONS, int outputBytes = PBKDF2_HASH_BYTES)
+        static byte[] ComputeHash(string password, byte[] salt, int iterations = PBKDF2_ITERATIONS, int outputBytes = PBKDF2_HASH_BYTES)
         {
             using (var pbk = new Rfc2898DeriveBytes(password, salt, iterations))
             {
@@ -131,14 +132,12 @@ namespace Sistema_GestionFacturacion.Formularios
 
             try
             {
-                byte[] saltBytes = GenerateSalt();
+                byte[] saltBytes = GenerarSalt();
                 byte[] hashBytes = ComputeHash(clave, saltBytes, PBKDF2_ITERATIONS, PBKDF2_HASH_BYTES);
-
-                // Construir comando parametrizado que envíe byte[] a columnas VARBINARY
+                // Construi un comando parametrizado que envíe byte[] a columnas VARBINARY
                 string sql = @"INSERT INTO Usuarios (Nombre, Apellido, Usuario, Clave, Sal, Iteraciones, IdRol, Estado)
                                VALUES (@Nombre, @Apellido, @Usuario, @Clave, @Sal, @Iteraciones, @IdRol, @Estado);";
-
-                using (var cmd = new SqlCommand(sql))
+                using (var cmd = new SqlCommand(sql)) //ocupe el SqlCommand para comandos parametrizados y evitar inyecciones incorrectas en SQL
                 {
                     cmd.Parameters.Add("@Nombre", SqlDbType.NVarChar, 100).Value = nombre;
                     cmd.Parameters.Add("@Apellido", SqlDbType.NVarChar, 100).Value = apellido;
@@ -180,7 +179,6 @@ namespace Sistema_GestionFacturacion.Formularios
             {
                 int idUsuario = -1;
                 int.TryParse(txtIdUsuario.Text.Trim(), out idUsuario);
-
                 string nombre = txtNombre.Text.Trim();
                 string apellido = txtApellido.Text.Trim();
                 string usuario = txtUsuario.Text.Trim();
@@ -201,7 +199,7 @@ namespace Sistema_GestionFacturacion.Formularios
                 }
                 if (!string.IsNullOrEmpty(clave))
                 {
-                    byte[] saltBytes = GenerateSalt();
+                    byte[] saltBytes = GenerarSalt();
                     byte[] hashBytes = ComputeHash(clave, saltBytes, PBKDF2_ITERATIONS, PBKDF2_HASH_BYTES);
 
                     string sql = @"UPDATE Usuarios
@@ -234,10 +232,10 @@ namespace Sistema_GestionFacturacion.Formularios
                             MostrarRegistros("Activo");
                             HabilitarNuevosRegistros(false);
                             LimpiarCampos();
-                            btnNuevoRegistro.Enabled = true;
                             btnDesactivarRegistro.Enabled = false;
                             btnReactivarRegistro.Enabled = false;
                             rbDatosActivos.Checked = true;
+                            lblEstado.Visible = false;
                         }
                         else
                         {
@@ -254,7 +252,6 @@ namespace Sistema_GestionFacturacion.Formularios
                                        IdRol = @IdRol,
                                        Estado = @Estado
                                    WHERE IdUsuario = @IdUsuario;";
-
                     using (var cmd = new SqlCommand(sql))
                     {
                         cmd.Parameters.Add("@Nombre", SqlDbType.NVarChar, 100).Value = nombre;
@@ -271,7 +268,6 @@ namespace Sistema_GestionFacturacion.Formularios
                             MostrarRegistros("Activo");
                             HabilitarNuevosRegistros(false);
                             LimpiarCampos();
-                            btnNuevoRegistro.Enabled = true;
                             btnDesactivarRegistro.Enabled = false;
                             btnReactivarRegistro.Enabled = false;
                             rbDatosActivos.Checked = true;
@@ -297,21 +293,15 @@ namespace Sistema_GestionFacturacion.Formularios
                 string columnas = "IdUsuario, Nombre, Apellido, Usuario, IdRol, Estado";
                 string condicion = $"Estado = '{estado}'";
                 DataTable dt = consulta.Buscar("Usuarios", columnas, condicion);
-
-                // If for any reason binary columns slipped in, remove them before binding
                 if (dt != null)
                 {
                     if (dt.Columns.Contains("Clave")) dt.Columns.Remove("Clave");
                     if (dt.Columns.Contains("Sal")) dt.Columns.Remove("Sal");
                     if (dt.Columns.Contains("Iteraciones")) dt.Columns.Remove("Iteraciones");
                 }
-
                 dgvDatos.DataSource = dt;
                 dgvDatos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dgvDatos.Refresh();
-
-                // Optional: if you want to show role name instead of IdRol, replace the IdRol column
-                // by performing a JOIN in the query or by a lookup here.
 
                 colorColumnaEstado();
             }
@@ -320,9 +310,6 @@ namespace Sistema_GestionFacturacion.Formularios
                 Alertas.Advertencia($"Error al mostrar registros: {ex.Message}");
             }
         }
-
-
-
         void ActivarDesactivarRegistros(string estadoActual, string nuevoEstado)
         {
             string estado = lblEstado.Text;
@@ -378,13 +365,11 @@ namespace Sistema_GestionFacturacion.Formularios
                     lblEstado.Text = fila.Cells["Estado"].Value.ToString();
                     lblOperacion.Text = "Editando...";
                     HabilitarNuevosRegistros(true);
-                    btnNuevoRegistro.Enabled = false;
                     if (lblEstado.Text == "Activo")
                     {
                         lblEstado.Visible = true;
                         btnDesactivarRegistro.Enabled = true;
                         btnReactivarRegistro.Enabled = false;
-                        btnNuevoRegistro.Enabled = false;
                         HabilitarNuevosRegistros(true);
                     }
                     else if (lblEstado.Text == "Inactivo")
@@ -392,7 +377,6 @@ namespace Sistema_GestionFacturacion.Formularios
                         lblEstado.Visible = true;
                         btnDesactivarRegistro.Enabled = false;
                         btnReactivarRegistro.Enabled = true;
-                        btnNuevoRegistro.Enabled = false;
                         HabilitarNuevosRegistros(true);
                     }
 
@@ -450,6 +434,9 @@ namespace Sistema_GestionFacturacion.Formularios
         private void btnCancelarRegistro_Click(object sender, EventArgs e)
         {
             HabilitarNuevosRegistros(false);
+            btnDesactivarRegistro.Enabled = false;
+            btnReactivarRegistro.Enabled = false;
+            lblEstado.Visible = false;
             LimpiarCampos();
         }
 
@@ -493,6 +480,14 @@ namespace Sistema_GestionFacturacion.Formularios
         private void btnTestConexion_Click(object sender, EventArgs e)
         {
             TestConexion();
+        }
+
+        private void rbDatosInactivos_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbDatosInactivos.Checked)
+            {
+                MostrarRegistros("Inactivo");
+            }
         }
     }
 }
