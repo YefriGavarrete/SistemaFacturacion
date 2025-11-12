@@ -1,8 +1,7 @@
-# Sistema_GestionFacturacion — Guía de colaboración
-
+# Sistema_GestionFacturacion   Guía de colaboración
 Resumen
 - Aplicación Windows Forms (.NET Framework 4.7.2) para gestión de facturación: pedidos, detalles de pedido, facturación, productos, categorías, descuentos, empleados, cargos, usuarios y roles.
-- Punto de entrada: `Program.cs` — la app inicia con `FormUsuariosLogin`.
+- Punto de entrada: `Program.cs`   la app inicia con `FormUsuariosLogin`.
 - Objetivo de esta guía: explicar cómo colaborar, reglas de acceso a la base de datos y buenas prácticas para evitar errores comunes.
 
 Requisitos (para contribuir)
@@ -16,14 +15,14 @@ SQL / Esquema de base de datos
 - Scripts sugeridos (ejecutar en SQL Server Management Studio):
   - `Scripts\CreateRolesAndUsuarios.sql` (roles y usuarios con `Clave`/`Sal`/`Iteraciones`)
   - `Scripts\CreatePedidosEmpleadosCargos.sql` (cargos, empleados, pedidos)
-  - `Scripts\CreateProductosCategoriasDescuentos.sql` (productos, categorias, descuentos)
+  - `Scripts\CreateProductosCategoriasDescuentos.sql` (productos, categorías, descuentos)
   - `Scripts\CreateDetallesPedidosAndFactura.sql` (detalles de pedido y factura)
 - Recomendación: ejecutar los scripts en un entorno de pruebas antes de producción.
 
 Reglas obligatorias para consultas y acceso a BD
 - Usar únicamente la clase `ConsultasSQL` desde forms y capas de UI para operaciones CRUD:
   - Métodos disponibles: `Buscar`, `Guardar`, `update`, `Eliminar`, `EjecutarConsulta`, `EjecutarComando`.
-  - Para consultas parametrizadas y columnas binarios (`VARBINARY`) crear un `SqlCommand`, añadir parámetros y llamar `consulta.EjecutarComando(cmd)`.
+  - Para consultas parametrizadas y columnas binarias (`VARBINARY`) crear un `SqlCommand`, añadir parámetros y llamar `consulta.EjecutarComando(cmd)`.
 - No colocar código de acceso a BD (creación de `SqlConnection` / `SqlCommand` / SQL inline) directamente dentro de event handlers (`btn_Click`) o de la UI.
   - Motivo: evita duplicación, fugas de conexión, errores de DataReader abiertos y facilita revisiones.
 - No modificar `Clases\Conexion.cs`. Está establecido para la gestión de la conexión en el proyecto.
@@ -34,16 +33,15 @@ Contraseñas seguras
   - Para insertar/actualizar hashes usar `SqlDbType.VarBinary` con `EjecutarComando`.
   - En login: leer `Clave`/`Sal` como `byte[]` y verificar con PBKDF2.
 
-DataGridView y columnas binarios
+DataGridView y columnas binarias
 - Nunca bindear columnas `Clave`, `Sal` o similares a DataGridView.
 - Excluir esas columnas en el SELECT o eliminar las columnas del DataTable antes de `DataSource = dt`.
-- Añadir un manejador `dgv.DataError` para suprimir el diálogo predeterminado y manejar errores de formato.
 
 Buenas prácticas de implementación
 - UI: validar entrada y delegar toda consulta a `ConsultasSQL`.
 - Para operaciones de actualización, incluir siempre el `Id` (PK) en el SELECT y usar `Id` en la cláusula WHERE.
 - Evitar concatenación de SQL con valores directos; preferir comandos parametrizados.
-- Usar `using` para `IDisposable` (en los helpers de `ConsultasSQL` ya está).
+- Usar `using` para `IDisposable` (en los helpers de `ConsultasSQL` ya está ).
 - Manejar los estados (Activo/Inactivo) en tablas maestras y preferir soft-delete (`Estado`), en vez de borrar físicamente.
 
 Rol y permisos en UI
@@ -64,9 +62,11 @@ Cómo ejecutar la solución localmente
 Pruebas básicas después de levantar el sistema
 - Crear roles (Administrador, Empleado) si no existen.
 - Crear un usuario Administrador (registro en `FormUsuariosLogin` o mediante script).
-- Probar login con Administrador: abrir `sFormMenu`, verificar botones habilitados.
+- Probar login con Administrador: abrir `FormMenu`, verificar botones habilitados.
 - Probar login con Empleado: abrir `FormMenu`, verificar buttons restringidos.
-- Probar crear producto/categoria/descuento, crear pedido con detalles y generar factura.
+- Probar crear producto/categoría/descuento, crear pedido con detalles y generar factura.
+- Verificar que las operaciones CRUD funcionan correctamente y que los datos se reflejan en la BD.
+- Hacer formularios de productos que es es el que contendra los productos almacenar.
 
 Flujo de trabajo Git / Pull Requests
 - Rama por tarea: `feature/<short-description>` o `bugfix/<id>-<short>`.
@@ -90,8 +90,4 @@ Notas de mantenimiento
 
 Contacto / revisión
 - Al enviar PR etiqueta a los revisores y añade un checklist breve: DB scripts, pruebas locales y formularios afectados.
-
----
-
-Archivo inicial sugerido: crear `README.md` en la raíz del proyecto con este contenido.
 
