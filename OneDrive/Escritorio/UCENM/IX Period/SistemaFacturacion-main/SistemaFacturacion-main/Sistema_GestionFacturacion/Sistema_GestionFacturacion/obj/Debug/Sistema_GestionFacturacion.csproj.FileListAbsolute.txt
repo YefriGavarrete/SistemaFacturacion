@@ -1,0 +1,51 @@
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.exe.config
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.exe
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.pdb
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.AssemblyReference.cache
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Logica_CRUD.resources
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Properties.Resources.resources
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.GenerateResource.cache
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.CoreCompileInputs.cache
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.exe
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.pdb
+C:\Users\braya\OneDrive\Desktop\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.exe.config
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.exe.config
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.exe
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.pdb
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.exe.config
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Logica_CRUD.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.exe
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.pdb
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormRoles.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormUsuariosLogin.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.Login.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormPedidos.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormCargos.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormEmpleado.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormCategorias.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormDescuentos.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\Database-1\Sistema_GestionFacturacion\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormMenu.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.exe.config
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.exe
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\bin\Debug\Sistema_GestionFacturacion.pdb
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.exe.config
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormCargos.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormCategorias.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormDescuentos.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormEmpleado.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormMenu.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormPedidos.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormRoles.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.FormUsuariosLogin.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Formularios.Login.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Logica_CRUD.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.exe
+C:\Users\ADMIN\OneDrive\Escritorio\UCENM\IX Period\SistemaFacturacion-main\SistemaFacturacion-main\Sistema_GestionFacturacion\Sistema_GestionFacturacion\obj\Debug\Sistema_GestionFacturacion.pdb

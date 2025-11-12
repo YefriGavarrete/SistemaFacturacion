@@ -1,0 +1,436 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formdescuentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formdescuentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formcargos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formcargos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|c:\\users\\admin\\onedrive\\escritorio\\ucenm\\ix period\\sistemafacturacion-main\\sistemafacturacion-main\\sistema_gestionfacturacion\\sistema_gestionfacturacion\\formularios\\formcategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formcategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formcategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formcategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|c:\\users\\admin\\onedrive\\escritorio\\ucenm\\ix period\\sistemafacturacion-main\\sistemafacturacion-main\\sistema_gestionfacturacion\\sistema_gestionfacturacion\\formularios\\formusuarioslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formusuarioslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formusuarioslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formusuarioslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formdescuentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formdescuentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\logica_crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\logica_crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\logica_crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\logica_crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formcargos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formcargos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\clases\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\clases\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\clases\\consultassql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\clases\\consultassql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\clases\\alertasdelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\clases\\alertasdelsistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\sistema_gestionfacturacion\\formularios\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E55930B-AA65-4C45-A003-9C55012B8434}|Sistema_GestionFacturacion\\Sistema_GestionFacturacion.csproj|solutionrelative:sistema_gestionfacturacion\\formularios\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormDescuentos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs [Design]",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T22:35:49.901Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCargos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCargos.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormCargos.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCargos.cs [Design]",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormCargos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T01:05:16.245Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormEmpleado.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs [Design]",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T01:04:46.002Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormMenu.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormMenu.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormMenu.cs [Design]*",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormMenu.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:29:38.505Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormMenu.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormMenu.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormMenu.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormMenu.cs*",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormMenu.cs*",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T15:36:25.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormCategorias.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T03:08:57.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormUsuariosLogin.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAUwOQBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T23:21:21.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormRoles.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormRoles.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormRoles.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T23:23:56.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormRoles.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormRoles.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAUwOcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T23:24:01.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormUsuariosLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuariosLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T03:49:00.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormCategorias.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs [Design]",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormCategorias.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T22:35:35.819Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Program.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Program.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T02:10:25.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormEmpleado.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAYwBgBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:44:20.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormDescuentos.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormDescuentos.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAowOkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:54:34.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Logica_CRUD.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Logica_CRUD.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Logica_CRUD.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Logica_CRUD.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Logica_CRUD.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T05:32:24.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Logica_CRUD.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Logica_CRUD.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Logica_CRUD.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Logica_CRUD.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Logica_CRUD.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T01:49:44.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormCargos.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCargos.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormCargos.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormCargos.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormCargos.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAqwGUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T01:19:56.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormPedidos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T03:48:52.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\Login.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\Login.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:04:27.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\Login.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:58:10.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormPedidos.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Formularios\\FormPedidos.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T03:56:08.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\Conexion.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Clases\\Conexion.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\Conexion.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Clases\\Conexion.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T23:22:49.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ConsultasSQL.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Clases\\ConsultasSQL.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:14:02.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AlertasDelSistema.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\AlertasDelSistema.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Clases\\AlertasDelSistema.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Clases\\AlertasDelSistema.cs",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\Clases\\AlertasDelSistema.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T23:35:51.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FormUsuarios.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuarios.cs",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\Formularios\\FormUsuarios.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuarios.cs [Design]*",
+              "RelativeToolTip": "..\\..\\..\\Database-1\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\Formularios\\FormUsuarios.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T04:03:54.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\App.config",
+              "RelativeDocumentMoniker": "Sistema_GestionFacturacion\\App.config",
+              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\Escritorio\\UCENM\\IX Period\\SistemaFacturacion-main\\SistemaFacturacion-main\\Sistema_GestionFacturacion\\Sistema_GestionFacturacion\\App.config",
+              "RelativeToolTip": "Sistema_GestionFacturacion\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-22T23:52:39.522Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
